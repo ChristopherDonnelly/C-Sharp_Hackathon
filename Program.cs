@@ -11,10 +11,14 @@ namespace Hackathon_Day
         {
 			List<Card> cards = JsonToFile<Card>.ReadJson();
 
-            foreach(var card in cards)
-            {
-                Console.WriteLine(card);
-            }
+            Game startGame = new Game();
+            startGame.PlayRound();
+
+            // foreach(var card in cards)
+            // {
+            //     Console.WriteLine(card);
+            // }
+
         }
     }
 }
