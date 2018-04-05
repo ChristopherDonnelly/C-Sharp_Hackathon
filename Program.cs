@@ -11,12 +11,14 @@ namespace Hackathon_Day
         {
 			List<Card> cards = JsonToFile<Card>.ReadJson();
 
-            Console.ForegroundColor = ConsoleColor.Red;
-            foreach(var card in cards)
-            {
-                Console.WriteLine(card);
-            }
-            Console.ForegroundColor = ConsoleColor.White;
+            Game startGame = new Game();
+            startGame.DealNewGame();
+
+            // foreach(var card in cards)
+            // {
+            //     Console.WriteLine(card);
+            // }
+
         }
     }
 }
