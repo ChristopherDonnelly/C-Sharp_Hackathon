@@ -14,6 +14,7 @@ namespace Hackathon_Day
         public string name;
         public int roundsWon = 0;
         public int gamesWon = 0;
+        public Card currentCard = new Card();
         public List<Card> hand = new List<Card>();
         public List<Card> playedCards = new List<Card>();
         public void resetCards()
