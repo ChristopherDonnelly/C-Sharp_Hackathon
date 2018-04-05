@@ -12,7 +12,7 @@ namespace Hackathon_Day
 			List<Card> cards = JsonToFile<Card>.ReadJson();
 
             Game startGame = new Game();
-            startGame.PlayRound();
+            startGame.DealNewGame();
 
             // foreach(var card in cards)
             // {
