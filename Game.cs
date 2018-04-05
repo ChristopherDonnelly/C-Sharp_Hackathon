@@ -33,7 +33,7 @@ namespace Hackathon_Day
             Console.ForegroundColor = ConsoleColor.Red;
             int player1Card = this.PlayCard(redPlayer);
             
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             int player2Card = this.PlayCard(bluePlayer);
             // System.Console.WriteLine("\nRed Player played: " + player1Card);
             // System.Console.WriteLine("Blue Player played: " + player2Card + "\n");
@@ -42,7 +42,7 @@ namespace Hackathon_Day
             Console.WriteLine("Red Player played: ");
             Console.WriteLine(redPlayer.playedCards[redPlayer.playedCards.Count-1]);
 
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Blue Player played: ");
             Console.WriteLine(bluePlayer.playedCards[bluePlayer.playedCards.Count-1]);
             
@@ -92,7 +92,7 @@ namespace Hackathon_Day
             foreach(Card c in redPlayer.playedCards){Console.WriteLine(c.value + " - " + c.name);}
             Console.WriteLine("Red player rounds won (current game): " + this.redPlayer.roundsWon);
             
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\nBlue player has played the following cards: ");
             foreach(Card c in bluePlayer.playedCards){Console.WriteLine(c.value + " - " + c.name);}
             Console.WriteLine("Blue player rounds won (current game): " + this.bluePlayer.roundsWon);
@@ -107,7 +107,7 @@ namespace Hackathon_Day
             System.Console.WriteLine("\n===========================WINS=============================");
             Console.ForegroundColor = ConsoleColor.Red;
             System.Console.WriteLine("Red player game wins: " + this.redPlayer.gamesWon);
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             System.Console.WriteLine("Blue player game wins: " + this.bluePlayer.gamesWon);
             Console.ForegroundColor = ConsoleColor.White;
             System.Console.WriteLine("============================================================= \n");
@@ -141,7 +141,7 @@ namespace Hackathon_Day
                 this.bluePlayer.gamesWon += 1;
                 this.hold = 0;
                 this.DisplayGameStats();
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 System.Console.WriteLine("\n***** Blue player wins game! *****");
                 Console.ForegroundColor = ConsoleColor.White;
                 this.bluePlayer.roundsWon = 0;
@@ -183,7 +183,7 @@ namespace Hackathon_Day
             }
             else if(result == 2)
             {
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 System.Console.WriteLine("\nBlue Player Wins round!");
                 Console.ForegroundColor = ConsoleColor.White;
                 this.AmbassadorCheck(this.bluePlayer.currentCard);
