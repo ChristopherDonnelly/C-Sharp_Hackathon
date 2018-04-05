@@ -77,6 +77,7 @@ namespace Hackathon_Day
             }
             else
             {
+                colorPlayer.currentCard = tempCard;
                 colorPlayer.playedCards.Add(tempCard);
                 colorPlayer.hand.Remove(tempCard);
                 return playerInput;
@@ -172,10 +173,10 @@ namespace Hackathon_Day
             }
             else if(result == 1)
             {
-                
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\nRed Player Wins round!");
                 Console.ForegroundColor = ConsoleColor.White;
+                this.AmbassadorCheck(this.redPlayer.currentCard);
                 this.redPlayer.roundsWon += 1 + this.hold;
                 this.hold = 0;
                 this.CheckGameOver(this.redPlayer,result);
@@ -185,6 +186,7 @@ namespace Hackathon_Day
                 Console.ForegroundColor = ConsoleColor.Blue;
                 System.Console.WriteLine("\nBlue Player Wins round!");
                 Console.ForegroundColor = ConsoleColor.White;
+                this.AmbassadorCheck(this.bluePlayer.currentCard);
                 this.bluePlayer.roundsWon += 1 + this.hold;
                 this.hold = 0;
                 this.CheckGameOver(this.bluePlayer,result);
@@ -192,6 +194,13 @@ namespace Hackathon_Day
             else
             {
                 this.CheckGameOver(this.bluePlayer,result);
+            }
+        }
+        public void AmbassadorCheck(Card playedCard)
+        {
+            if(playedCard.value == 4)
+            {
+                this.hold += 1;
             }
         }
     }
