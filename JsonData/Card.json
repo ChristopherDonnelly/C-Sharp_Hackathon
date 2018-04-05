@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "value": 0,
+        "name": "Musician",
+        "desc": "This round is on hold.",
+        "modifier": "hold"
+    },
+    {
+        "id": 2,
+        "value": 1,
+        "name": "Princess",
+        "desc": "If your opponent plays the Prince you win the whole game.",
+        "modifier": "win game"
+    },
+    {
+        "id": 3,
+        "value": 2,
+        "name": "Spy",
+        "desc": "Next round, you choose a card after your opponent reveals theirs.",
+        "modifier": "reveal"
+    },
+    {
+        "id": 4,
+        "value": 3,
+        "name": "Assassin",
+        "desc": "The lower strength wins instead.",
+        "modifier": "lower card wins"
+    },
+    {
+        "id": 5,
+        "value": 4,
+        "name": "Ambassador",
+        "desc": "If you win, it counts as two rounds.",
+        "modifier": "x2 round"
+    },
+    {
+        "id": 6,
+        "value": 5,
+        "name": "Wizard",
+        "desc": "Nullify your opponent’s special ability.",
+        "modifier": "null"
+    },
+    {
+        "id": 7,
+        "value": 6,
+        "name": "General",
+        "desc": "The next card you play gets +2 strength.",
+        "modifier": "+2 strength"
+    },
+    {
+        "id": 8,
+        "value": 7,
+        "name": "Prince",
+        "desc": "You win the round.",
+        "modifier": "win round"
+    }
+]
